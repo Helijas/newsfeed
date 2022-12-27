@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/article.css">
+<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+<!--[if lt IE 9]>
+<script src="assets/js/html5shiv.min.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="top_nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="header_top_right">
+            <p>Friday, December 05, 2045</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="index.html" class="logo"><img src="images/logo.jpg" alt=""></a></div>
+          <div class="add_banner"><a href="#"><img src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+          <li><a href="#">Technology</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Nokia</a></li>
+              <li><a href="#">Walton Mobile</a></li>
+              <li><a href="#">Sympony</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="pages/contact.html">Contact Us</a></li>
+          <li><a href="pages/404.html">404 Page</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="newsSection">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="latest_newsarea"> <span>Latest News</span>
+          <ul id="ticker01" class="news_sticker">
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My First News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Second News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Third News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Four News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Five News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Six News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Seven News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">My Eight News Item</a></li>
+            <li><a href="#"><img src="images/news_thumbnail2.jpg" alt="">My Nine News Item</a></li>
+          </ul>
+          <div class="social_area">
+            <ul class="social_nav">
+              <li class="facebook"><a href="#"></a></li>
+              <li class="twitter"><a href="#"></a></li>
+              <li class="flickr"><a href="#"></a></li>
+              <li class="pinterest"><a href="#"></a></li>
+              <li class="googleplus"><a href="#"></a></li>
+              <li class="vimeo"><a href="#"></a></li>
+              <li class="youtube"><a href="#"></a></li>
+              <li class="mail"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sliderSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="slick_slider">
+          <div class="single_iteam"> <a href="pages/single_page.html"> <img src="images/slider_img4.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/single_page.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+              <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui...</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="pages/single_page.html"> <img src="images/slider_img2.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/single_page.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+              <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui...</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="pages/single_page.html"> <img src="images/slider_img3.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/single_page.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+              <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui...</p>
+            </div>
+          </div>
+          <div class="single_iteam"> <a href="pages/single_page.html"> <img src="images/slider_img1.jpg" alt=""></a>
+            <div class="slider_article">
+              <h2><a class="slider_tittle" href="pages/single_page.html">Fusce eu nulla semper porttitor felis sit amet</a></h2>
+              <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="latest_post">
+          <h2><span>Latest post</span></h2>
+          <div class="latest_post_container">
+            <div id="prev-button"><i class="fa fa-chevron-up"></i></div>
+            <ul class="latest_postnav">
+              <li>
+                <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media"> <a href="pages/single_page.html" class="media-left"> <img alt="" src="images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="pages/single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                </div>
+              </li>
+            </ul>
+            <div id="next-button"><i class="fa  fa-chevron-down"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+          
+          <h2 class="left__content-h">Pensaban que una madre de 47 años era la novia de su hijo. Ella revela el secreto de su juventud</h2>
+          <p class="left__content-data"><img alt="" src="images/time.svg"> 26.12.2022</p>
+          <hr class="hr__border">
+
+          <div class="left__content-text">
+            <div class="left__content-container">
+              <div class="left__content-up">
+                <strong>Esta historia increíble se volvió rápidamente muy popular en Internet. Todo comenzó cuando Samuel David, de 22 años, le envió un mensaje a una chica que le gustaba, expresándole su deseo de conocerla. La chica notó que Samuel no estaba sola en su foto de perfil y le preguntó si a su novia no le importaría que se conocieran. La respuesta le sorprendió: "No es mi novia, es mi madre".</strong>
+              </div>
+              <div class="left__content-down">Foto de perfil de Samuel David con su madre Paula la derecha</div>
+            </div>
+            <img class="left__content-img1" src="images/article_1.jpg" alt="">
+          </div>
+
+          <br>
+
+          <div class="left__content-text2">
+              <div class="left__content-up2">
+                La chica pensó que era una excusa ridícula, pero cuando miró detalladamente el perfil de Samuel, descubrió que no le estaba mintiendo. Había varias fotos tituladas "Mi madre y yo" donde podía ver la misma belleza: su madre Paula Andrea, de 47 años. Resultó ser que no era la primera vez que confundían a Paula con la novia de su hijo, y después la bombardeaban con preguntas sobre cómo se las apañaba para verse dos veces más joven. Muchos sospechaban que su aspecto era producto de una cirugía plástica, pero en realidad su secreto era muy diferente.
+              </div>
+              <img class="left__content-img2" src="images/article_2.jpg" alt="">
+              <div class="left__content-down2">A la izquierda, Paula de 28 años, con Samuel de 3 años. A la derecha, el 47 cumpleaños de Paula</div>
+          </div>
+
+          <br>
+
+          <div class="left__content-text3">
+            
+                <div class="left__content-up3">
+                  <strong>— Paula, a juzgar por las fotos, no cambiaste nada en los últimos 20 años. Me gustaría hacerte una pregunta, aunque probablemente ya estés cansada de responderla: ¿cómo lo lograste?</strong>
+                  <br><br>
+                  — En primer lugar, permíteme darte las gracias, me voy a poner roja y todo. Es cierto que cambie, ahora mi estilo y mi forma de vestir es definitivamente mejor. En segundo lugar, tengo suerte: estoy casada con un dermatólogo.
+                  <br><br>
+                  <strong>— Entonces, ¿la razón por la que te ves tan linda y joven es completamente suya?</strong>
+                  <br><br>
+                  — Por supuesto. Es un especialista, un médico. Simplemente sigo sus recomendaciones.
+                  <br><br>
+                  <strong>— Si no es un secreto, ¿cuáles son esas recomendaciones?</strong>
+                  <br><br>
+                  — Las reglas clásicas que habrás escuchado innumerables veces: un buen sueño y una alimentación adecuada, pero sería una mentira si te dijera que es suficiente. Mi marido es un especialista licenciado que trabaja en colaboración con laboratorios. Hace unos 10 años, fue el primero en desarrollar una fórmula rejuvenecedora llamada <span><strong>Inno Gialuron</strong></span> . Yo fui la primera voluntaria en participar en los ensayos clínicos. En ese momento, tenía 37 años y, por supuesto, ya tenía arrugas, manchas pigmentadas, etc.
+                </div>
+              <div class="left__content-container2">
+                <div class="left__content-down3">A la izquierda, Paula de 28 años, con Samuel de 3 años. A la derecha, el 47 cumpleaños de Paula</div>
+                <img class="left__content-img3" src="images/article_3.jpg" alt="">
+              </div>    
+          </div>
+
+          <div class="left__content-text4">
+            
+            <strong>— ¿Quieres decir que tu marido desarrolló el producto especialmente para ti?</strong>
+            <br><br>
+            — Al principio, sí. Al verme en el espejo, estaba más y más molesta con el paso de los días y seguía quejándome de que mi marido era dermatólogo y que no podía hacer nada por el marchitamiento de mi piel. Para mí, las inyecciones de belleza no eran una opción. Como esposa de un médico, era plenamente consciente de las consecuencias de insertar agentes químicos debajo de la piel. Además, tengo un miedo terrible a las agujas, así que la fórmula que desarrolló fue un acierto en la diana por varias razones: en primer lugar, porque tendría una mujer joven y linda, en segundo lugar, porque dejaría de quejarme a él y, en tercer lugar, porque era una especie de desafío: hacía tiempo que deseaba comenzar a desarrollar su propio producto porque en el mercado de los cosméticos no había nada que cumpliera plenamente con sus requisitos.
+            <br><br>
+            <strong>— ¿El producto dio buenos resultados inmediatamente?</strong>
+            <br><br>
+            — La fórmula fue probada y ajustada varias veces, pero los primeros resultados fueron muy reveladores solamente después de la segunda o tercera prueba. Me aplicaba la producto cada día durante un mes y, una bonita mañana, al mirarme en el espejo, me di cuenta de que mis arrugas habían desaparecido y que el tono de mi piel se había vuelto uniforme. Desde entonces, desde hace 10 años, mi piel se ve como la ves.
+            <br><br>
+            <strong>— Dr. Orozco, cuéntenos cómo logró desarrollar una fórmula que da resultados tan notables y por qué casi nadie la conoce.</strong>
+            <br><br>
+            — Para mí, como especialista, no hay nada complicado en esta fórmula: simplemente hay que saber cómo está construido el cuerpo humano y las funciones de la piel. En cuanto a su segunda pregunta, este producto es muy conocida: yo se la recomiendo a mis pacientes, y estos a sus amigos, etc. Pero debe tener en cuenta que el mercado moderno está lleno de productos cosméticos. Las grandes empresas invierten enormes cantidades de dinero en marketing y publicidad, y es imposible romper el ruido de información que generan.
+            <br><br>
+            <strong>— Acaba de mencionar que hay que saber cómo funciona la piel humana. ¿Puede explicarnos este proceso con palabras sencillas?</strong>
+            <br><br>
+            — A partir de los 25 años, las personas comienzan a perder cada año aproximadamente el 1% del contenido de colágeno en la piel, que es uno de los "bloques de construcción" de la epidermis. Esto conduce a la desorganización de su estructura, es decir, la estructura de la piel se altera. Además, se ralentizan los procesos de regeneración de la piel y de todo el organismo. El nuevo material de construcción se fabrica en cantidades menores, mientras que el antiguo se descompone y no se restaura. Esto conduce a una pérdida de elasticidad y, por lo tanto, a la flacidez de la piel, a la pérdida de volumen y, finalmente, a la formación de arrugas profundas.
+            <br><br>
+            <strong>— ¿Y cómo funciona su fórmula?</strong>
+            <br><br>
+            — Si el cuerpo no puede producir colágeno, hay que ayudarle. Es por eso que la fórmula está enriquecida con colágeno adicional, pero como sabrá, el colágeno adicional solo afecta a las consecuencias del problema, y nosotros​​tenemos que lidiar con su causa: estimular la síntesis de nuevo colágeno y la acumulación de fibras de colágeno.
+            <br><br>
+            Tardamos un tiempo para buscar la mejor solución y, en nuestra primera versión de la fórmula, usamos retinol. Sin embargo, los resultados de las pruebas mostraron que el retinol tiene muchos efectos secundarios: descamación de la piel, picazón, reacciones alérgicas, etc. Entonces, decidimos reemplazar el retinol por su análogo vegetal, el bakuchiol.
+            <br><br>
+            Otros ensayos mostraron que el bakuchiol no solo estimula la liberación de colágeno, es decir, restaura la elasticidad de la piel y alisa las arrugas, sino que además suprime la liberación de melanina, responsable de la formación de las manchas pigmentadas. En algunos casos, gracias a sus propiedades antisépticas, elimina las imperfecciones de la piel y el acné. Fue entonces cuando nos dimos cuenta de que habíamos encontrado lo que necesitábamos.
+            <br><br>
+            <strong>— ¿Hay otros ejemplos, además de su esposa, que puedan demostrar la eficacia de la fórmula?</strong>
+            <br>
+            — Por supuesto. Paula fue la primera, pero después de hacer todas las pruebas de laboratorio, pusimos la producto en producción. Yo, por mi parte, comencé a recomendarla a mis pacientes, y ellos, a su vez, la recomendaban a familiares y amigos. <strong><span class="color">Su experiencia ha demostrado que incluso las mujeres mayores de 65 años pueden deshacerse de las arrugas faciales, resolviendo el problema de la sequedad y la flacidez de la piel.</span></strong>
+          </div>
+
+          <div class="left__content-slider" id="slider-section">
+            <div class="slick_slider">
+              <div class="single_iteam"> <a href="#"> <img src="images/slider_img5.jpg" alt=""></a>
+                <div class="slider_article">
+                  <h2><a class="slider_tittle" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h2>
+                </div>
+              </div>
+              <div class="single_iteam"> <a href="#"> <img src="images/slider_img7.jpg" alt=""></a>
+                <div class="slider_article">
+                  <h2><a class="slider_tittle" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.</a></h2>
+                </div>
+              </div>
+              <div class="single_iteam"> <a href="#"> <img src="images/slider_img8.jpg" alt=""></a>
+                <div class="slider_article">
+                  <h2><a class="slider_tittle" href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, dolorem eveniet.</a></h2>
+                </div>
+              </div>
+          </div>
+
+          <div class="left__content-text4">
+            <strong>— Dice que los poderosos gigantes de productos cosméticos dificultan su entrada al mercado. ¿Cómo se comercializa su producto? ¿Dónde se puede comprar?</strong>
+            <br><br>
+            — Por ahora, lamentablemente, solo se vende en nuestra web oficial. Esperamos que en el futuro podamos llegar a los estantes de las farmacias y tiendas mientras seguimos negociando, pero esta situación beneficia a los compradores: dado que la producto no se comercializa en nuestro país y no la publicitamos entre los consumidores como parte de un programa de marketing, a menudo llevamos a cabo promociones limitadas con descuentos.
+          </div>
+
+          <!-- --------------------------------------------------------------- -->
+          <div class="left__content-discount discount">
+            <div class="discount__wrapper">
+              <div class="discount__container">
+
+                  <div class="discount__roulette">
+                    <div class="discount__roulette-text">
+                      <h3 class="discount__roulette-text1"><strong>¡Atención!</strong></h3>
+                      <br>
+                      <p class="discount__roulette-text2">¡Los visitantes de nuestra web tienen una oportunidad exclusiva de pedir Inno Gialuron! Para ello, tienes que girar la ruleta de la fortuna haciendo clic en el botón "GIRAR" y esperar hasta que se detenga por completo. Quién sabe, ¡tal vez tú seas el afortunado! ¡Buena suerte!</p>
+                    </div>
+
+                    <div class="discount__roulette-wheel">
+                      <!--  ЗДЕСЬ БУДЕТ КОЛЕСО С САЙТА  -->
+
+
+                      <div class="arrow"><img src="images/arrow.png" alt=""></div>
+                      <div class="wheel rotating">
+                        <span class="wheel__span1">10%</span>
+                        <span class="wheel__span2">40%</span>
+                        <span class="wheel__span3">0%</span>
+                        <span class="wheel__span4">30%</span>
+                        <span class="wheel__span5">20%</span>
+                        <span class="wheel__span6">50%</span>
+                        <span class="wheel__span7">10%</span>
+                        <span class="wheel__span8">20%</span>
+                        <span class="wheel__span9">50%</span>
+                        <span class="wheel__span10">5%</span>
+                      </div>
+
+                      <button class="spin" id="modalBtn">Girar</button>
+
+                    </div>
+                  </div>
+                  <!-- right -->
+                  <div class="discount__form">
+                    <div class="discount__form-wrapper">
+                      <div class="discount__form-container">
+                        <div class="discount__form-header">
+                          <img src="./images/med.png" alt="">
+                          <h3>Formulario de pedido oficial</h3>
+                          <br>
+                          <h6>#29.982 de 30.000 27.12.2022</h6>
+                        </div>
+
+                        <div class="discount__form-table">
+                          Para recibir Inno Gialuron, introduce tu nombre y número de teléfono en los campos de abajo y haz clic en el botón "ENVIAR SOLICITUD".
+                        </div>
+
+                        <form class="discount__form-form" action="">
+                          <select class="discount__form-select">
+                            <option value="Russia">Russia</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Kazahstan">Kazahstan</option>
+                          </select>
+                          <input type="name" class="discount__form-name" placeholder="Name">
+                          <input type="tel" class="discount__form-tel" placeholder="Tel :">
+                          <button class="discount__form-button">ENVIAR SOLICITUD</button>
+                        </form>
+                        <div class="discount__form-text">
+                          * Tus datos se enviarán directamente al fabricante. Nadie más tendrá acceso a ellos.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr class="hr__border">
+          <!-- -------------------------------МОДАЛКА-------------------------------- -->
+          
+          <div id="myModal" class="modal">
+
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-inside">
+                <h2 class="modal-h1">¡Enhorabuena!</h2>
+                <p class="modal-text">¡Puedes pedir Inno Gialuron con un de <strong>descuento !</strong></p>
+                <button id="modal__button" class="modal__button">OK</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- --------------------------------------------------------------- -->
+
+          <div class="left__content-comments left__comments">
+            <div class="left__comments-container">
+              <h3>Comentarios:</h3>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment1.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Claudia Espinosa</div>
+                  <div class="comment-text">Quizás la gente no pensaría que es la novia de su hijo si no posara en la foto como si lo fuera.</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment2.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Luz Marina</div>
+                  <div class="comment-text">¿Entonces por qué otros dermatólogos aún no han creado una producto tan milagrosa? ¿Cuál es el problema? ¿No son especialistas?</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment3.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Jorge Manuel</div>
+                  <div class="comment-text">Claudia, estoy de acuerdo. Parece bastante extraño.</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment4.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">María Celeste</div>
+                  <div class="comment-text">¡Este producto realmente funciona! Por cierto, me enteré de ella por los comentarios en Facebook y no por este dermatólogo ni por sus pacientes.</div>
+                  <div class="comment-data">27.12.2022</div>
+                  <img class="comment-pfoto" src="./images/comments/comment4ph.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment5.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Esperanza Gómez</div>
+                  <div class="comment-text">Lo más importante es la transformación interior. Primero rejuvenece tu cara, y luego tu vida comienza a llenarse de todo tipo de emociones. Y es algo que no se puede expresar con palabras.</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment6.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Xiomara L.</div>
+                  <div class="comment-text">¡Estoy totalmente de acuerdo con eso! Después de usar este producto, mi marido volvió a interesarse en mí como si volviéramos a la adolescencia, ¡y ahora tenemos relaciones sexuales con más frecuencia que hace 20 años!</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment7.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Luisa Fernanda</div>
+                  <div class="comment-text">No me gusta la dama del artículo. Es demasiado narcisista...</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment8.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Vilma Pérez</div>
+                  <div class="comment-text">Le pedí este producto a mi madre. El tubo no se ve tan bonito como los productos de marcas famosas, por supuesto, pero es comprensible, ya que se trata claramente de una producción independiente. Mi madre está feliz y ya lleva 2 meses usándola.</div>
+                  <div class="comment-data">27.12.2022</div>
+                  <img class="comment-pfoto" src="./images/comments/comment8ph.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment9.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Ofelia Valle</div>
+                  <div class="comment-text">¡Acabo de ganar un 50% de descuento! ¿Alguien más se lo ha llevado también?</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment10.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Isabel Hidalgo</div>
+                  <div class="comment-text">Yo obtuve un 30% de descuento. Actualicé la página varias veces y volví a intentarlo, pero solo conseguí un 30% así que la pedí.</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment11.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Carmen Martínez</div>
+                  <div class="comment-text">¡¡¡Realmente funciona!!! Me la pedí hace 3 meses y he estado usándola todos los días desde entonces, espero que no paren la producción.</div>
+                  <div class="comment-data">27.12.2022</div>
+                  <img class="comment-pfoto" src="./images/comments/comment11ph.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment12.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Darlisa García</div>
+                  <div class="comment-text">¿Y cuánto durará el período de promoción?</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+              <div class="left__content-item">
+                <div class="left__content-icon">
+                  <img src="./images/comments/comment13.jpg" alt="">
+                </div>
+                <div class="comment">
+                  <div class="comment-name">Mayra Carrozo</div>
+                  <div class="comment-text">Ahora la gente me dice que aparento menos de 30 años, ¡es increíble! Solía ​​avergonzarme de mi aspecto, pero ahora me avergüenza decir que en realidad tengo 43 :)</div>
+                  <div class="comment-data">27.12.2022</div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_top">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInLeftBig">
+            <h2>Flickr Images</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInDown">
+            <h2>Tag</h2>
+            <ul class="tag_nav">
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Life &amp; Style</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Photo</a></li>
+              <li><a href="#">Slider</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="footer_widget wow fadeInRightBig">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <address>
+            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p class="copyright">Copyright &copy; 2045 <a href="index.html">NewsFeed</a></p>
+      <p class="developer">Developed By Wpfreeware</p>
+    </div>
+  </footer>
+</div>
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/wow.min.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/slick.min.js"></script> 
+<script src="assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="assets/js/jquery.newsTicker.min.js"></script> 
+<script src="assets/js/jquery.fancybox.pack.js"></script> 
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+
+.hr__border {
+    border: 0.5px solid #be5dbc31;
+}
+/* ------ BLOCK 1 ------ */
+.left__content-h{
+    font-size: 35px;;
+    line-height: 40px;;
+}
+.left__content-data img{
+    max-height: 14px;
+    margin-bottom: 3px;
+}
+
+.left__content-text{
+    display: flex;
+    gap:  15px;
+}
+
+.left__content-up{
+    color: #be5dbd;
+}
+.left__content-down{
+    margin: 10% 0 0 0;
+}
+
+.left__content-img1{
+    height: 60%;
+    width: 60%;
+}
+@media (max-width: 992px){
+    .left__content-text{
+        flex-direction: column;
+    }
+    .left__content-img1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* ------ BLOCK 2 ------ */
+.left__content-text2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.left__content-img2 {
+    width: 100%;
+    margin-top: 15px;
+}
+.left__content-down2 {
+    text-align: center;
+}
+
+/* ------ BLOCK 3 ------ */
+
+.left__content-text3{
+    display: flex;
+    flex-direction: column;
+    gap:  15px;
+}
+
+.left__content-up3 span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left__content-container2{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.left__content-down3{
+    width: 80%;
+}
+
+.left__content-img3{
+    height: 60%;
+    width: 70%;
+
+}
+
+@media (max-width: 992px){
+    .left__content-img3{
+        width: 100%;
+    }
+}
+
+/* ------ BLOCK 4 ------ */
+
+.left__content-text4 span{
+    color: #be5dbd;
+}
+
+/* ------ BLOCK 5 slider ------ */
+.single_iteam img{
+    width: 100%;
+    height: 130%;
+}
+@media (max-width: 992px){
+    .single_iteam img{
+        width: 110%;
+        height: 90%;
+    }
+}
+/* ------ BLOCK 6 wheel-of-fortune ------ */
+
+.left__content-discount {
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid #be5dbd;
+    box-shadow: 3px 3px 3px #be5dbc73;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.discount {
+    width: 100%;
+}
+.discount__wrapper {
+    width: 100%;
+}
+.discount__container {
+    width: 100%;
+    display: flex;
+}
+@media (max-width: 992px){
+    .discount__container{
+        flex-direction: column;
+    }
+}
+
+.discount__roulette {
+    flex-basis: 50%;
+}
+.discount__roulette-text {
+    text-align: center;
+}
+.discount__roulette-text1 {
+    margin: 0;
+    color: #be5dbd;
+}
+
+/* ЗДЕСЬ БУДЕТ КОЛЕСО ФОРТУНЫ */
+
+.discount__roulette-wheel{
+height: 100%;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.wheel {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    
+    background-image: conic-gradient(#be5dbd 10%, #be5dbc73 0 20%, #be5dbd 0 30%, #be5dbc73 0 40%, #be5dbd 0 50%, #be5dbc73 0 60%, #be5dbd 0 70%, #be5dbc73 0 80%,#be5dbd 0 90%, #be5dbc73 0);
+}
+
+.arrow {
+    z-index: 200;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 185px;
+}
+.arrow img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(270deg);
+}
+
+.spin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    width: 50%;
+    border-radius: 4px;
+    border-color: #303030;
+    background-color: #ffb3fe;
+}
+.spin:hover {
+    background-color: #ffb3fe59;
+}
+.spin:active {
+    box-shadow: 5px 5px #be5dbd;
+}
+
+
+.rotating {
+    transition: all 3s;
+}
+
+.wheel {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "spinner";
+    transform: rotate(calc(var(--rotate, 25) * 1deg));
+    border-radius: 50%
+};
+
+.wheel {
+    grid-area: spinner;
+}
+
+:root{
+    --rotate: 36deg;
+}
+.wheel span{
+    font-size: 16px;
+    font-weight: 700;
+    color: #303030;
+}
+
+
+
+.wheel__span1{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+  /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(36deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span2{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+  /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(72deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span3{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(108deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span4{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(144deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span5{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(180deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span6{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(216deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span7{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(252deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span8{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(288deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span9{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(324deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+.wheel__span10{
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    user-select: none;
+    display: flex;
+  align-items: center;
+  /* задаём отступы от краёв блока */
+  padding: 5%;
+   /* устанавливаем размеры */
+  width: 50%;
+  height: 50%;
+  /* устанавливаем координаты, относительно которых будем вращать текст */
+  transform-origin: center right;
+  /* поворачиваем текст */
+  transform: rotate(360deg);
+  /* запрещаем пользователю выделять мышкой текст на секторах */
+  user-select: none;
+}
+
+/* right */
+.discount__form {
+    flex-basis: 50%;
+}
+@media (max-width: 992px){
+    .discount__form {
+        margin-top: 30px;
+    }
+}
+.discount__form-container {
+    display: flex;
+    flex-direction: column;
+}
+.discount__form-container img{
+    width: 70%;
+}
+.discount__form-header {
+    text-align: center;
+}
+.discount__form-table {
+    text-align: center;
+}
+
+/* form */
+.discount__form-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+.discount__form-select {
+    width: 60%;
+    height: 30px;
+    border-color: #be5dbd;
+    border-radius: 3px;
+}
+.discount__form-name {
+    width: 60%;
+    height: 30px;
+    border-color: #be5dbd;
+    border-radius: 3px;
+}
+.discount__form-tel {
+    width: 60%;
+    height: 30px;
+    border-color: #be5dbd;
+
+}
+.discount__form-button {
+    width: 70%;
+    height: 40px;
+    border-radius: 4px;
+    border-color: #303030;
+    background-color: #ffb3fe;
+}
+
+.discount__form-button:hover {
+    background-color: #ffb3fe59;
+}
+.discount__form-button:active {
+    box-shadow: 5px 5px #be5dbd;
+}
+
+.discount__form-text {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ------ BLOCK 7 Comments ------ */
+
+
+
+.left__content-comments {
+    margin: 30px 0;
+}
+
+.left__comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.left__content-item {
+    display: flex;
+}
+
+@media (max-width: 992px){
+    .left__content-item {
+        flex-wrap: wrap;
+    }
+}
+
+.left__content-icon {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.left__content-icon img{
+    border: 2px solid #be5dbd;
+    border-radius: 5px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.comment-text {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.comment-data {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.comment-pfoto{
+    max-height: 300px;
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
